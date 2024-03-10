@@ -1,0 +1,169 @@
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #005288; /* Dark blue color for aviation */
+    position: fixed; /* Fixed positioning to keep the nav at the top */
+    top: 0; /* Aligns the navigation bar at the top of the viewport */
+    width: 100%; /* Ensures nav bar extends full width */
+    z-index: 1000;
+    
+}
+
+
+.Nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for the nav links */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Align the items vertically */
+}
+
+.Nav-links li {
+    /* No change needed here, but ensure float:left is removed or not included as it conflicts with flexbox */
+}
+
+.Nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Nav-links li a:hover, .active {
+    background-color: #003C64; /*
+.active {
+    background-color: #004C7F; /* Different shade of blue for the active page */
+}
+
+/* Footer styling */
+footer {
+    background-color: #0074D9; /* Brighter blue, for a contrast */
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content i {
+    margin-right: 5px;
+}
+
+* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Dark grey color for text */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px; /* Adds some spacing around the content */
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #007bff; /* Blue color for active/hover links */
+}
+
+.gallery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between images */
+    justify-content: center; /* Center-aligns the images */
+}
+
+.gallery-photos img {
+    width: 100%; /* Makes images responsive */
+    max-width: 300px; /* Limits image width */
+    border-radius: 10px; /* Rounds the corners of images */
+}
+
+
+/* Menu Styling */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.menu-item {
+    width: calc(33.333% - 20px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item h3 {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+.menu-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* Photo div styling */
+.photo {
+    margin: 20px auto;
+    width: 80%; /* Adjusts the width of the photo container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the photo */
+    border-radius: 10px; /* Rounds the corners of the photo div */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    display: flex;
+    justify-content: center; /* Center the image inside the div */
+}
+
+.photo img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.5s ease; /* Smoothens the zoom effect */
+}
+
+.photo img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
