@@ -167,3 +167,47 @@ body {
 .photo img:hover {
     transform: scale(1.05); /* Slightly enlarges the image on hover */
 }
+
+
+/* Form styling */
+.form {
+    margin: 20px auto;
+    width: 80%; /* Adjusts the width of the form container */
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Adds some spacing inside the form */
+    border-radius: 10px; /* Rounds the corners of the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the form */
+}
+
+.form label {
+    margin-bottom: 10px; /* Adds space between labels */
+    display: block; /* Makes labels display as block elements */
+    font-weight: 400;
+}
+
+.form input[type="text"],
+.form input[type="tel"] {
+    width: calc(100% - 20px); /* Sets input width */
+    padding: 10px; /* Adds padding inside inputs */
+    margin-bottom: 10px; /* Adds space between inputs */
+    border: 1px solid #ccc; /* Adds a border around inputs */
+    border-radius: 5px; /* Rounds the corners of inputs */
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    margin-right: 5px; /* Adds space between radio buttons and checkboxes */
+}
+
+.form button[type="submit"] {
+    background-color: #0074D9; /* Blue background for the submit button */
+    color: white; /* White text color for the submit button */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.form button[type="submit"]:hover {
+    background-color: #005288; /* Darker blue color on hover */
+}
